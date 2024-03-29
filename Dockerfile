@@ -10,7 +10,7 @@ COPY app.py .
 # Install Flask
 RUN pip install Flask
  
-# Expose port 80 to the outside world
+# Expose port 80 to the outside world.
 EXPOSE 80
  
 # Run the Python script when the container launches
