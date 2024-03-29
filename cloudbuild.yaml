@@ -11,7 +11,7 @@ steps:
     args:
       - '-c'
       - |
-        gcloud compute instances update-container vm-container \
+        gcloud compute instances update-container mazumdar-vm \
           --container-image us-central1-docker.pkg.dev/winter-2024/mazumdar-assignment2-repo/flaskapp:${COMMIT_SHA} \
           --zone us-central1-a
 options:
