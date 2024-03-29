@@ -1,5 +1,5 @@
 # Use the official Python image as the base image
-FROM python:3.11-slim
+FROM python:3.8-slim
  
 # Set the working directory in the container
 WORKDIR /
@@ -11,7 +11,7 @@ COPY . .
 RUN pip install Flask
  
 # Expose port 8080 to the outside world
-EXPOSE 8080
+EXPOSE 80
  
 # Run the Python script when the container launches
 CMD ["python", "app.py"]
